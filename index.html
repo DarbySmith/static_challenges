@@ -5,9 +5,66 @@
     <title>5280 Landmarks</title>
     <link rel="stylesheet" href="stylesheets/reset.css" title="text/css" />
     <link rel="stylesheet" href="stylesheets/main.css" title="text/css" />
+  <style>
+    .item1 { grid-area: header; }
+    .item2 {grid-area: nav; }
+    .item3 { grid-area: main; }
+    .item4 { grid-area: right; }
+    .item5 { grid-area: footer; }
+    
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'nav nav nav nav nav nav'
+        'main main main main right right'
+        'footer footer footer footer footer footer';
+      gap: 10px;
+      padding: 10px;
+    }
+    
+    .grid-container > div {
+      text-align: left;
+      padding: 50px 0;
+    }
+  </style>
   </head>
   <body>
+    <div class="grid-container">
+      <div class="item1">
+        <h1>5280 Lanmarks</h1> 
+        <a href="https://turing.edu">Login</a>
+      </div>
 
+      <div class="item2" style="text-align: right; background-color: rgb(55, 54, 54); max-height: fit-content; width: 25 px;">
+        <a href="https://www.turing.edu" style="color: white">Building</a> <a href="https://www.turing.edu" style="color: white">Art</a>
+        <a href="https://www.turing.edu" style="color: white">Featued</a>
+      </div>
+      <div class="item3">
+        <img src="1.jpg" alt="Denver Art Museum" style="max-width: fit-content; height: 800px;"></img>
+        <h2 style="font:Arial; font-size: 25px;">Denver Art Museum</h2>
+        <p id="contentParagraph">Lorem ipsum dolor ghdkjg soigosdhgo soigodshgj  sodhodjsg soihgdosihgdsoi osdhogdhsg qoiskdjg aoijeojng aoigodnsg ajgoidjsg eroiwn gihbnosdj jgit anoidf aoijoita aoijfonvn shoiuhgfj soifhng ahouhroj weirng tun oodisjf soigj sdbjnonvjoifjn  oijovf sio soijn woiejr cjoij soifn</p>
+      </div>  
+      <div class="item4">
+        <img src="2.jpg" alt="Larimer Square overview" width="200px" height="250px"></img><br>
+        <img src="5.jpg" alt="Millenium Bridge" width="200px" height="250px"></img><br>
+        <img src="6.jpg" alt="Molly Brown House" width="200px" height="250px""></img>
+      </div>
+      <div class="item5">
+        <p id="footerParagraph">Alia maiorum pro te soner sec goner goins goisdndgoig angit gjion teor quen sen slimp sitm hoity riti crom siblim aoign bret</p>
+      </div>
+    </div>
+    <!-- <h1>5280 Landmarks</h1>
+    <section>
+      <img src="1.jpg" alt="Denver Art Museum" width="500px" height="150px"></img>
+    </section>
+    <h2>Denver Art Museum</h2>
+    <article>Lorem ipsum dolor ghdkjg soigosdhgo soigodshgj  sodhodjsg soihgdosihgdsoi osdhogdhsg qoiskdjg aoijeojng aoigodnsg ajgoidjsg eroiwn gihbnosdj jgit anoidf aoijoita aoijfonvn shoiuhgfj soifhng ahouhroj weirng tun oodisjf soigj sdbjnonvjoifjn  oijovf sio soijn woiejr cjoij soifn </p>
+    <footer>Alia maiorum pro te soner sec goner goins goisdndgoig angit gjion teor quen sen slimp sitm hoity riti crom siblim aoign bret</footer>
+    <aside>
+      <img src="2.jpg" alt="Larimer Square overview" width="250px" height="300px"></img>
+
+    </aside> -->
   </body>
 </html>
 
